@@ -47,7 +47,7 @@ namespace GIFTParserForASA
                 var questIndex = 0;
                 foreach (var testUnit in value)
                 {
-                    Console.WriteLine($"{questIndex++}) {testUnit.QuestContent}");
+                    //Console.WriteLine($"{questIndex++}) {testUnit.QuestContent}");
                 }
             }
             Console.WriteLine("");

@@ -14,3 +14,8 @@ D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj
 D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaCore.dll
 D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaGiftParser.dll
 D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaGiftParser.pdb
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

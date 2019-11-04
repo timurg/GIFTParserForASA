@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net.Mime;
 using asaCore;
 
 namespace asaGiftParser
@@ -8,22 +9,51 @@ namespace asaGiftParser
     public class asaParser
     {
         private readonly string themeSign = "$CATEGORY: $course$/";
-        
-        private readonly string imageSign = "<img src\\=\"@@PLUGINFILE@@/";
-        
+        private readonly ContentType jpgContentType =  new System.Net.Mime.ContentType("image/JPEG");
+        private readonly ContentType pngContentType =  new System.Net.Mime.ContentType("image/png");
+        private readonly string imageStart = "<img src\\=\"@@PLUGINFILE@@/";
+        private readonly string imageEnd = "\" alt\\=\"\">";
         private readonly Dictionary<string, MemoryStream> _files;
+        
+        private asaCore.asaBuffer GetImage(string fileName)
+        {
+            asaCore.asaBuffer buf = null;
+
+            if (_files.ContainsKey(fileName))
+            {
+                buf = new asaCore.asaBuffer {ContentType = jpgContentType};
+                System.Drawing.Bitmap bm = new System.Drawing.Bitmap(_files[fileName]);
+                buf.ID = Guid.NewGuid();
+                buf.AutoComment = buf.ID.ToString() + ".jpg";
+                System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                bm.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                buf.Buffer = ms.ToArray();
+                buf.Version = 1;
+            }
+            return buf;
+        }
 
         public asaParser(Dictionary<string, MemoryStream> files)
         {
             _files = files;
         }
 
-        private string PrepareString(string content)
+        static public string GetInternalURL(asaTestUnitEx tuex, Guid BufferID)
+        {
+            return string.Format("[BUFER ID={0}]", BufferID);
+        }
+        private string PrepareString(asaTestUnitEx testUnit, string content)
         {
             content = content.Replace("\\n", "<br/>");
-            while (content.Contains(imageSign))
+            int index = -1;
+            while ((index = content.IndexOf(imageStart)) >= 0)
             {
-                
+                var j = content.IndexOf(imageEnd, index);
+                var path = content.Substring(index + imageStart.Length, j - (index + imageStart.Length));
+                var buffer = GetImage(path);
+                testUnit.Buffers.Add(buffer);
+                content = content.Replace($"{imageStart}{path}{imageEnd}", GetInternalURL(testUnit, buffer.ID));
+                Console.WriteLine(path);
             }
             return content;
         }
@@ -69,8 +99,12 @@ namespace asaGiftParser
                         {
                             var question = new asaTestUnitEx
                             {
-                                QuestContent = PrepareString(QuestContent), type = asaTestTypes.quest_type.correspondence
+                                type = asaTestTypes.quest_type.correspondence,
+                                Difficulties = 2,
+                                Ball = 1,
+                                ThemeID = currentTheme.ID
                             };
+                            question.QuestContent = PrepareString(question, QuestContent);
                             var left = new List<string>();
                             var right = new List<string>();
                             do
@@ -88,7 +122,7 @@ namespace asaGiftParser
                                     Sequence = line.Length + i + 1,
                                     IsRight = false,
                                     Tag = 0,
-                                    ItemText = PrepareString(left[i]),
+                                    ItemText = PrepareString(question, left[i]),
                                     OrderNum = i + 1
                                 });
                             }
@@ -100,7 +134,7 @@ namespace asaGiftParser
                                     Sequence = 0,
                                     IsRight = false,
                                     Tag = 0,
-                                    ItemText = PrepareString(right[i]),
+                                    ItemText = PrepareString(question, right[i]),
                                     OrderNum = line.Length + i + 1
                                 });
                             }
@@ -111,8 +145,12 @@ namespace asaGiftParser
                         {
                             var question = new asaTestUnitEx
                             {
-                                QuestContent = PrepareString(QuestContent), type = asaTestTypes.quest_type.closed
+                                type = asaTestTypes.quest_type.closed,
+                                Difficulties = 2,
+                                Ball = 1,
+                                ThemeID = currentTheme.ID,
                             };
+                            question.QuestContent = PrepareString(question, QuestContent);
                             do
                             {
                                 var isRight = line.StartsWith("=");
@@ -122,7 +160,7 @@ namespace asaGiftParser
                                     Sequence = 0,
                                     IsRight = isRight,
                                     Tag = 0,
-                                    ItemText = PrepareString(line),
+                                    ItemText = PrepareString(question, line),
                                     OrderNum = question.QuestItemList.Count + 1
                                 });
                                 line = stringReader.ReadLine();
