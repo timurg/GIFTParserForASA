@@ -1,0 +1,16 @@
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.exe
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.deps.json
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.runtimeconfig.json
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.runtimeconfig.dev.json
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\GIFTParserForASA.pdb
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\ICSharpCode.SharpZipLib.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.csprojAssemblyReference.cache
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.AssemblyInfoInputs.cache
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.AssemblyInfo.cs
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.csproj.CopyComplete
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\obj\Debug\netcoreapp3.0\GIFTParserForASA.pdb
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaCore.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaGiftParser.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\GIFTParserForASA\bin\Debug\netcoreapp3.0\asaGiftParser.pdb

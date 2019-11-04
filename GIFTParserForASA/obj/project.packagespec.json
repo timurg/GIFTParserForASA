@@ -1,0 +1,50 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\GIFTParserForASA.csproj",
+    "projectName": "GIFTParserForASA",
+    "projectPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\GIFTParserForASA.csproj",
+    "outputPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\asaGiftParser\\asaGiftParser.csproj": {
+            "projectPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\asaGiftParser\\asaGiftParser.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "dependencies": {
+        "SharpZipLib": {
+          "target": "Package",
+          "version": "[1.2.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

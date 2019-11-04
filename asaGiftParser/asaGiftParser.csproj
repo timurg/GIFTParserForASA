@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="asaCore, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\lib\asaCore.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "SharpZipLib/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "asaGiftParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/asaGiftParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/asaGiftParser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharpZipLib/1.2.0": {
+      "sha512": "zvWa/L02JHNatdtjya6Swpudb2YEHaOLHL1eRrqpjm71iGRNUNONO5adUF/9CHbSJbzhELW1UoH4NGy7n7+3bQ==",
+      "type": "package",
+      "path": "sharpziplib/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.pdb",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.2.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "asaGiftParser/1.0.0": {
+      "type": "project",
+      "path": "../asaGiftParser/asaGiftParser.csproj",
+      "msbuildProject": "../asaGiftParser/asaGiftParser.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "SharpZipLib >= 1.2.0",
+      "asaGiftParser >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Тимур\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\GIFTParserForASA.csproj",
+      "projectName": "GIFTParserForASA",
+      "projectPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\GIFTParserForASA.csproj",
+      "packagesPath": "C:\\Users\\Тимур\\.nuget\\packages\\",
+      "outputPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\GIFTParserForASA\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Тимур\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\asaGiftParser\\asaGiftParser.csproj": {
+              "projectPath": "D:\\YandexDisk\\Work\\JetBrains\\RiderProjects\\GIFTParserForASA\\asaGiftParser\\asaGiftParser.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "dependencies": {
+          "SharpZipLib": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

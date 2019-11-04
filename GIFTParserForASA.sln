@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIFTParserForASA", "GIFTParserForASA\GIFTParserForASA.csproj", "{F5A38DF6-25C6-4C31-8670-15F9526A1A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asaGiftParser", "asaGiftParser\asaGiftParser.csproj", "{560F0332-8CAD-4342-893A-D3C65DB9CFF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A38DF6-25C6-4C31-8670-15F9526A1A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A38DF6-25C6-4C31-8670-15F9526A1A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A38DF6-25C6-4C31-8670-15F9526A1A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A38DF6-25C6-4C31-8670-15F9526A1A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560F0332-8CAD-4342-893A-D3C65DB9CFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560F0332-8CAD-4342-893A-D3C65DB9CFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560F0332-8CAD-4342-893A-D3C65DB9CFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560F0332-8CAD-4342-893A-D3C65DB9CFF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

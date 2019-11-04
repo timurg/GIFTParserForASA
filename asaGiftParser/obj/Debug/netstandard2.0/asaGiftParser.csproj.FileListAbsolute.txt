@@ -1,0 +1,10 @@
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\bin\Debug\netstandard2.0\asaGiftParser.deps.json
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\bin\Debug\netstandard2.0\asaGiftParser.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\bin\Debug\netstandard2.0\asaGiftParser.pdb
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\bin\Debug\netstandard2.0\asaCore.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.csprojAssemblyReference.cache
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.AssemblyInfoInputs.cache
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.AssemblyInfo.cs
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.csproj.CopyComplete
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.dll
+D:\YandexDisk\Work\JetBrains\RiderProjects\GIFTParserForASA\asaGiftParser\obj\Debug\netstandard2.0\asaGiftParser.pdb

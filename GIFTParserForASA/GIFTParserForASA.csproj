@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SharpZipLib" Version="1.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\asaGiftParser\asaGiftParser.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="asaCore, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\lib\asaCore.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
